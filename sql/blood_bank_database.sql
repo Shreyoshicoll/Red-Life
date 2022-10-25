@@ -24,7 +24,7 @@ Primary key()
 
 /*  insert admin data into admin_info table*/
 insert into admin_info(admin_name,admin_username,admin_password)
-values("RedLife","RedLife000",123);
+values("SHREYOSHI DE","Shreyoshi",123),("RITAJA MAITRA","Ritaja",1234),("SAYANTONI PRAMANIK","Sayantoni",12345),("DEBARGHYA ROY","Debarghya",1223);
 
 /*create table blood in which all blood group is stored.*/
 create table blood(
@@ -57,8 +57,9 @@ contact_phone varchar(100) NOT NULL,
 primary key(contact_id)
 );
 
-insert into contact_info(contact_address,contact_mail,contact_phone)
-values("Hisar,Haryana(125001)","bloodbank@gmail.com","7056550477");
+insert into contact_info(contact_address,contact_phone)
+values("Gurukul, Y-12, Block -EP, Sector-V, Salt Lake Electronics Complex
+Kolkata – 700 091, West Bengal","8335916806");
 
 
 
@@ -150,7 +151,7 @@ timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
 
 
 insert into contact_query (query_name,query_mail,query_number,query_message) values
-("Anuj","anuj@gmail.com","9923471025","I need O+ Blood.");
+("Ankan","ankan@gmail.com","9876543210","I need O+ Blood."),("Vedant","vedant@gmail.com","1234567890","Mujhe Khoon dedo");
 
 update contact_query set query_status="1" where query_id="1";
 
